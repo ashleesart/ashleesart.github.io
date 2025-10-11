@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Assignment earl0048</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Assignment earl0048</title>
+  <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Ashlee's Art ♡</h1>
-            <link href="css/main.css" rel="stylesheet">
-            <img src="./images/ashlees-art_logo.png" alt="Image of Logo that reads, Ashlee's Art, and contains a heart." /> 
-            <img src="./images/ashlee-photo.png" alt="Image of a woman standing in front of pumpkins." />
-    </header>
-    <main>
-        <section>
-        <Article>
-            <h2>
-               Welcome to my online art portfolio! 🎨🖌️💻
-            </h2>
-                <p>I am a multi-media artist based in Canada.🍁</p>
-            <br>
-            <h3>Want to learn five HTML tags that you can use in Visual Studio Code?</h3>
-            <p>Click on the following link to navigate to my notes page!</p>
-            <a href="https://ashleesart.github.io/html-assignment/notes.html">Notes</a><br>
-            <br>
-            <h3>
-                A little bit about me:
-            </h3>
-            <p>
-                <em>Hello</em>, my name is <strong>Ashlee Earle</strong> Currently I am a student at Algonquin College in the Interactive Media Design course.<br>
-                Recently, I also graduated this past August, from Algonquin's Business-Marketing program as well, however I don't walk accorss the stage until NEXT June! 😮🎓<br>
-                I also graduated from 3D Computer Animation in 2018 from the Vancouver Animation School, where I was taught by some incredible professionals who worked<br> on productions such as Star Wars, Hotel Transylvania, Mulan, Scooby-Doo and more!<br>
-            </p>
-            <p>  
-                I like to create art both tradtionally and digitally through a variety of mediums, as well as like to try various artistic hobbies like photography or jewelry making. <br>
-                I think that one day, if I get the space for it, I would also like to get into sculpture or pottery, as well as sewing to create my own clothing.
-            </p>  
-            <br>
+  <header>
+    <div class="header-content">
+      <h1 class="site-title">Ashlee's Art ♡</h1>
+      <div class="header-images">
+        <img src="./images/ashlees-art_logo.png" alt="Image of Logo that reads, Ashlee's Art, and contains a heart.">
+        <img id="my-image" src="./images/ashlee-photo.png" alt="Image of a woman standing in front of pumpkins.">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <div class="intro">
+          <h2>Welcome to my online art portfolio! 🎨🖌️💻</h2>
+          <p>I am a multi-media artist based in Canada.🍁</p>
+        </div>
+
+        <div class="notes-link">
+          <h3>Want to learn five HTML tags that you can use in Visual Studio Code?</h3>
+          <p>Click on the following link to navigate to my notes page!</p>
+          <nav>
+          <a href="https://ashleesart.github.io/html-assignment/notes.html">Notes</a>
+        </nav>
+        </div>
+
+        <div class="about-me">
+          <h3>A little bit about me:</h3>
+          <p><em>Hello</em>, my name is <strong>Ashlee Earle</strong>. Currently I am a student at Algonquin College in the Interactive Media Design course.<br>
+          Recently, I also graduated this past August, from Algonquin's Business-Marketing program as well, however I don't walk across the stage until NEXT June! 😮🎓<br>
+          I also graduated from 3D Computer Animation in 2018 from the Vancouver Animation School, where I was taught by some incredible professionals who worked<br>
+          on productions such as Star Wars, Hotel Transylvania, Mulan, Scooby-Doo and more!<br></p>
+          <p>I like to create art both traditionally and digitally through a variety of mediums, as well as like to try various artistic hobbies like photography or jewelry making.<br>
+          I think that one day, if I get the space for it, I would also like to get into sculpture or pottery, as well as sewing to create my own clothing.</p>
+        </div>
+
+        <div class="skills-hobbies">
+          <div class="skills">
             <h3>Skills</h3>
+            <em>Proficient in the following programs:</em>
             <ul>
-                <h4>Profficient in the following programs:</h4>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>After Effects</li>
-                        <li>Light Room</li>
-                        <br>
-                        <br>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>After Effects</li>
+              <li>Lightroom</li>
             </ul>
+          </div>
+
+          <div class="hobbies">
             <h3>Hobbies</h3>
             <ul>
-                    <li>Traditional Art</li>
-                    <li>Digital Art</li>
-                    <li>Crafting</li>
-                    <li>Karate</li>
-                    <br>
+              <li>Traditional Art</li>
+              <li>Digital Art</li>
+              <li>Crafting</li>
+              <li>Karate</li>
             </ul>
-            <h3>Here is one of my favourite quotes!</h3>
-            <blockquote>
-                "The <em>Earth</em> without <Strong>ART</Strong> is just <Strong>EH</Strong>."
-                <cite>Demetri Martin</cite>
-            </blockquote>
-            <br>
-            <p>
-                If you would like to follow me on any socials,<br>
-                you can find me on <a href="https://www.facebook.com/AshleesArt/">Facebook</a> & <a href="https://www.instagram.com/ashlees.art.page/">Instagram</a>!
-            </p>
-            <p>Thanks for visiting!</p>
-            <br>
-        </Article>
-        </section>   
-    </main>
-    <footer>
-        <p>&copy;Copyright 2025 Ashlee's Art - Ashlee Earle</p>
-    </footer>    
+          </div>
+        </div>
+
+        <div class="quote">
+          <h3>Here is one of my favourite quotes!</h3>
+          <blockquote>
+            "The <em>Earth</em> without <strong>ART</strong> is just <strong>EH</strong>."
+            <cite>— Demetri Martin</cite>
+          </blockquote>
+        </div>
+
+        <div class="socials">
+          <p>If you would like to follow me on any socials,<br>
+          you can find me on <a href="https://www.facebook.com/AshleesArt/">Facebook</a> & 
+          <a href="https://www.instagram.com/ashlees.art.page/">Instagram</a>!</p>
+          <p>Thanks for visiting!</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Copyright 2025 Ashlee's Art - Ashlee Earle</p>
+  </footer>
 </body>
 </html>
