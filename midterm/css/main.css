@@ -1,0 +1,197 @@
+/* === MAIN CSS === */
+/* Student: earl0048 */
+/* Primary Color: #aad4cf */
+
+/* --- GENERAL STYLES --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dbeeea;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #004f4f;
+  text-transform: uppercase; 
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-align: center; 
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #004f4f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+/* --- HEADER --- */
+.site-header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.site-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(12, 111, 100, 0.5);
+    padding: 2px 15px;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+
+/* --- NAVIGATION --- */
+
+.main-nav {
+  background-color: #aad4cf;
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* centers links evenly */
+  align-items: center;
+  gap: 50px; /* spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #004f4f; /* vertical separator */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* --- ARTICLE --- */
+.main-article {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.article-img {
+    float: left; /* makes text wrap */
+    width: 40%;
+    margin: 0 20px 10px 0;
+    border-radius: 10px;
+    border: 1px solid #004f4f;
+}
+
+/* --- FACTS SECTION --- */
+.facts {
+    background-color: #ffffff;
+    border: 2px solid #aad4cf;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.facts ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* --- FORM SECTION --- */
+.contact-form {
+    background-color: #aad4cf;
+    border: 2px solid #004f4f;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+}
+
+.visit-question {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.visit-question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.visit-question label {
+  display: inline-flex; 
+  margin: 0 15px; 
+  cursor: pointer;
+}
+
+.visit-question input[type="radio"] {
+  margin-right: 5px; 
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 2px solid #aad4cf;
+    margin-top: 30px;
+}
