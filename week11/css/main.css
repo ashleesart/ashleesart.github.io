@@ -65,19 +65,19 @@ On laptop (1200px): 3 columns */
 }
 
 .box23{
-
+    grid-row: 1/ span 3;
 }
 
 .box33{
-
-}
-
-.box43
-
+    grid-column: 1/ span 2;
 }
 
 .box53{
+    grid-column: 1/ span 2;
+}
 
+.box63{
+    grid-colum: 1/ span 3;
 }
 
 
