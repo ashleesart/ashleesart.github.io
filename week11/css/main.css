@@ -29,9 +29,13 @@ On laptop (1200px): 3 columns */
 }
 
 @media screen and (min-width: 1200px) {
-    grid-template-columns: repeat (3, 1fr);
+    .grid-container{
+        grid-template-columns: repeat (3, 1fr);
+    }
 }
 
 @media screen and (min-width: 1300px) {
-    grid-template-columns: 200px 1fr 50px 2fr 1fr;
+    .grid-container{
+        grid-template-columns: 200px 1fr 50px 2fr 1fr;
+    }
 }
