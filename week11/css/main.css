@@ -1,13 +1,20 @@
 /* Student: earl0048 */
 /* Main CSS */
 
+/* On mobile: one columns
+On tablet: (700px): 2 columns
+On laptop (1200px): 3 columns */
+
 .grid-container {
     background-color: lightblue;
     padding: 1 rem;
     display: grid;
     /*grid-template-columns: 400px;*/
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40px 40px;
+    /*grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 40px;*/
+    grid-template-columns: 1fr;
+
+
 }
 
 .box {
@@ -15,3 +22,8 @@
     border: 2px solid black;
 }
 
+@media screen and (min-width: 700px) {
+    .grid-container{
+        grid-template-colums: 1fr 1fr;
+    }
+}
