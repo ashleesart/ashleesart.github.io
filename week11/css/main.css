@@ -1,0 +1,13 @@
+/* Student: earl0048 */
+/* Main CSS */
+
+.grid-container {
+    background-color: lightblue;
+    padding: 1 rem;
+    display: grid;
+}
+
+.box {
+    background-color: lightcoral;
+    border: 2px solid black;
+}
