@@ -5,9 +5,12 @@
     background-color: lightblue;
     padding: 1 rem;
     display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 40px 40px;
 }
 
 .box {
     background-color: lightcoral;
     border: 2px solid black;
 }
+
