@@ -77,13 +77,13 @@ On laptop (1200px): 3 columns */
 }
 
 .box63{
-    grid-colum: 1/ span 3;
+    grid-column: 1/ span 3;
 }
 
 
 @media screen and (min-width: 700px) {
     .grid-container{
-        grid-template-colums: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
