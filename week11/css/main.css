@@ -5,7 +5,8 @@
     background-color: lightblue;
     padding: 1 rem;
     display: grid;
-    grid-template-columns: 400px;
+    /*grid-template-columns: 400px;*/
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40px 40px;
 }
 
