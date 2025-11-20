@@ -1,4 +1,29 @@
 body {
     display: grid;
     grid-template-columns: 1fr 2fr 1 fr;
+    grid-template-areas: 
+    "header header header"
+    ". navigation ."
+    ". name ."
+    "footer footer footer"
+}
+
+header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+nav {
+    grid-area: navigation;
+    background-color: lightcoral;
+}
+
+main {
+    grid-area: main;
+    background-color: lightgrey;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightblue;
 }
