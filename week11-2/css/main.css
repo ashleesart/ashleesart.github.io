@@ -31,5 +31,9 @@ footer {
 @media screen and (min-width: 700px) {
     body {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: none
+        "header header header"
+        "navigation main main"
+        "footer footer footer";
     }
 }
