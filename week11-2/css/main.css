@@ -23,6 +23,16 @@ main {
     background-color: lightgrey;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80px;
+}
+
+.box {
+    background-color: lightgreen;
+}
+
 footer {
     grid-area: footer;
     background-color: lightblue;
