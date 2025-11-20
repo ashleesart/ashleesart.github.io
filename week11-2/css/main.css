@@ -1,11 +1,11 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr 1 fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-    "header header header"
-    ". navigation ."
-    ". name ."
-    "footer footer footer";
+        "header header header"
+        ". navigation ."
+        ". main ."
+        "footer footer footer";
 }
 
 header {
@@ -31,9 +31,9 @@ footer {
 @media screen and (min-width: 700px) {
     body {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: none
-        "header header header"
-        "navigation main main"
-        "footer footer footer";
+        grid-template-areas:
+            "header header header"
+            "navigation main main"
+            "footer footer footer";
     }
 }
