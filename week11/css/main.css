@@ -84,12 +84,40 @@ On laptop (1200px): 3 columns */
 .grid-container4 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat (4, 20px)
+    grid-template-rows: repeat (4, 20px);
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+}
+
+.sun {
+    grid-area: a;
+}
+
+.mon {
+    grid-area: b;
+}
+
+.tues {
+    grid-area: c;
+
+}
+
+.wed {
+    grid-area: d;
 }
 
 @media screen and (min-width: 700px) {
     .grid-container{
         grid-template-columns: 1fr 1fr;
+    }
+    .grid-container4{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "a b b"
+        "c d d";
     }
 }
 
