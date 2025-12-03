@@ -1,0 +1,59 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        ". navigation ."
+        ". main ."
+        "footer footer footer";
+}
+
+/* FULL-WIDTH ITEMS */
+header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightblue;
+}
+
+/* CENTERED COLUMN ITEMS */
+nav {
+    grid-area: navigation;
+    background-color: lightcoral;
+}
+
+main {
+    grid-area: main;
+    background-color: lightgrey;
+}
+
+/* GRID INSIDE MAIN — no grid-area because it stays inside main */
+.container {
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80px;
+}
+
+.box {
+    background-color: lightgreen;
+}
+
+.box2 {
+    align-self: end;
+}
+
+/* TABLET/DESKTOP LAYOUT (teacher style) */
+@media screen and (min-width: 700px) {
+    body {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            ". navigation ."
+            ". main ."
+            "footer footer footer";
+    }
+}
