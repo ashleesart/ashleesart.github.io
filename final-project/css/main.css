@@ -1,0 +1,392 @@
+/* =========================================
+   CSS RESET
+   (Removes default browser styling)
+========================================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+img, picture, video, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    background: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h2, h3 {
+    text-align: left; /* ALL HEADERS LEFT-ALIGNED */
+}
+
+/* =========================================
+   HEADER / NAVIGATION
+========================================= */
+header {
+    background: #222;
+    color: white;
+    padding: 1rem;
+}
+
+header .logo img {
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* MOBILE */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #c78c06;
+}
+
+.search-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.search-form button {
+    background: #c78c06;
+    color: white;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+/* =========================================
+   HERO BANNER
+========================================= */
+.hero {
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #c78c06;
+    padding: 0.75rem 1.5rem;
+    color: white;
+}
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+.about {
+    display: flex;
+    flex-direction: column; /* MOBILE STACK */
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: #ffe6ac;
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+.services {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr; /* MOBILE GRID */
+    gap: 2rem;
+}
+
+.service-card {
+    background: #ffe6ac;
+    padding-bottom: 1rem;
+}
+
+.service-card h3 {
+    padding: 1rem;
+}
+
+.service-card p {
+    padding: 0 1rem 1rem;
+}
+
+.service-btn {
+    background: #c78c06;
+    color: white;
+    padding: 0.75rem 1rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+/* =========================================
+   VISION SECTION
+========================================= */
+.vision {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.vision img {
+    width: 100%;
+    display: block;
+}
+
+.vision-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    padding: 1.5rem;
+}
+
+.vision-btn {
+    display: block;
+    background: #c78c06;
+    padding: 0.75rem 1.25rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* =========================================
+   TEAM SECTION
+========================================= */
+.team {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 50%;
+    display: flex;
+    margin: 0;
+}
+
+.team-member:nth-of-type(even) {
+    flex-direction: row-reverse; /* alternating layout */
+}
+
+.team-member img {
+    width: 50%;
+}
+
+.team-info {
+    width: 50%;
+    padding: 1rem;
+}
+
+.team-role {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+.contact {
+    padding: 2rem 1rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column; /* MOBILE */
+    gap: 2rem;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.send-btn {
+    background: #222;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+/* =========================================
+   HOURS OF OPERATION
+========================================= */
+.hours {
+    padding: 2rem 1rem;
+}
+
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours th,
+.hours td {
+    border: 1px solid #222;
+    padding: 0.75rem;
+}
+
+.hours th {
+    background-color: #fff4b3; /* yellow header */
+    text-align: left;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* =========================================
+   DESKTOP STYLES — min-width: 760px
+========================================= */
+@media (min-width: 760px) {
+
+    /* HEADER — FLEXBOX */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+
+    .search-form {
+        width: 250px;
+    }
+
+    /* HERO */
+    .hero-content {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        max-width: 450px;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-image,
+    .about-text {
+        flex: 1;
+    }
+
+    /* SERVICES GRID — DESKTOP */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+    }
+
+    /* Top row: two large cards */
+    .service-card:nth-of-type(1),
+    .service-card:nth-of-type(2) {
+        grid-column: span 3;
+    }
+
+    /* Bottom row: three smaller cards */
+    .service-card:nth-of-type(3),
+    .service-card:nth-of-type(4),
+    .service-card:nth-of-type(5) {
+        grid-column: span 2;
+    }
+
+    /* TEAM */
+    .team-member {
+        display: flex;
+    }
+
+    .team-member img {
+        width: 50%;
+    }
+
+    /* CONTACT */
+    .contact-wrapper {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .location img {
+        width: 100%;
+    }
+}
